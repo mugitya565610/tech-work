@@ -1,0 +1,9 @@
+.results{
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .title{
+    font-size: 29px;
+  }
+}
