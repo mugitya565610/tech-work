@@ -125,7 +125,8 @@ td span{
   border: 0;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #69c4d0;
+  background-color: #ee7b00;
+  border-radius: 4px;
   padding: 17px 0px;
   font-size: 18px;
   width: 182px;

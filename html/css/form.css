@@ -99,6 +99,9 @@ input[type=text]:active,input[type=email]:active{
   width: 182px;
 }
 
+
+
+
 .loginmodal-submit:focus{
   outline: none !important;
   color: #fff;

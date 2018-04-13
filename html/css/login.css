@@ -1,4 +1,4 @@
-body, html {  background-color: #69c4d0;
+body, html {
 }
 
 h1, h2, h3, h4, h5, h6, p, body {
@@ -10,9 +10,21 @@ h1, h2, h3, h4, h5, h6, p, body {
   padding: 0;
 }
 
+
+body{
+  background-image: url("../img/background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #69c4d0;
+}
+
 i{
   font-family: "FontAwesome";
 }
+
+
 
 
 .content{
@@ -25,57 +37,20 @@ i{
 
 .loginmodal-container{
   max-width: 100%;
-    background-color: #69c4d0;
+      background-image: url("../img/background.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #69c4d0;
       padding: 159px 30px;
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
 }
 
-@media screen and (max-width: 768px){
-  .loginmodal-container{
-      height: 100%;
-}
-}
 
 
 
 
-
-@media screen and (min-width: 768px){
-
-
-  .content{
-  width: 600px;
-  margin: 125px auto;
-}
-
-.panel-header{
-  max-width: 350px;
-  width: 100% !important;
-  margin: 0 auto;
-}
-
-h1{
-  color: #69c4d0 !important;
-}
-.loginmodal-container{
-  background-color: #fff;
-  max-width: 400px;
-  padding: 55px 30px;
-  width: 100% !important;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-input[type=email], input[type="password"],.top-btn{
-  margin-bottom: 10px !important;
-}
-
-.btngroup{
-  margin-top: 12px !important;
-}
-
-}
 
 
 .panel-header{
@@ -144,7 +119,6 @@ input[type=email]:focus, input[type="password"]:focus{
 .loginmodal-submit{
   border: 0;
   color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1);
   padding: 0;
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   font-size: 18px;
@@ -158,27 +132,105 @@ input[type=email]:focus, input[type="password"]:focus{
   background-color: #69c4d0;
   color: #fff;
   border: solid 2px #fff !important;
+  transition-property: all;
+    transition: 0.3s ease;
 }
 
 .bottom-btn{
   background-color: orange;
-  color: #fff;
+  color: #fff !important;
   margin-bottom: 0px;
+}
+
+.bottom-btn:hover{
+  background-color: orange;
+  transition: filter 0.3s ease;
+  filter: brightness(1.08);
+
 }
 
 .loginmodal-submit:focus{
   outline: none !important;
-  color: #fff;
+
 }
 
 .loginmodal-submit:hover{
   border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  color: #fff;
+
 }
 
 
 
 ::placeholder{
   color: #ccc;
+}
+
+@media screen and (max-width: 768px){
+  .loginmodal-container{
+      height: 100%;
+}
+  .top-btn:focus{
+  outline: none !important;
+  color: #fff;
+}
+
+.top-btn:hover{
+  background-color: #fff !important;
+  border: 0px;
+  color: #69c4d0 ;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+
+  .content{
+  width: 600px;
+  margin: 125px auto;
+}
+
+.panel-header{
+  max-width: 350px;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+h1{
+  color: #69c4d0 !important;
+}
+.loginmodal-container{
+  background-color: #fff !important;
+  background-image: none !important;
+  max-width: 405px;
+  padding: 60px 30px;
+  width: 100% !important;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+input[type=email], input[type="password"],.top-btn{
+  margin-bottom: 10px !important;
+}
+
+.btngroup{
+  margin-top: 12px !important;
+}
+.top-btn{
+  background-color: #69c4d0;
+  color: #fff !important;
+  border: solid 2px #69c4d0 !important;
+}
+
+.top-btn:hover{
+    background-color: #69c4d0;
+  filter: brightness(1.08);
+
+}
+
+
 }
