@@ -1,13 +1,11 @@
-body, html {
-  height: 100%;
-  background-color: #f7f7f7;
+body, html {  background-color: #69c4d0;
 }
 
 h1, h2, h3, h4, h5, h6, p, body {
   line-height: 1.77;
   font-size: 18px;
   color: #4a4a4a;
-  font-family: sans-serif;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -18,46 +16,95 @@ i{
 
 
 .content{
-  width: auto;
-  margin: 75px 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   position: relative;
 
 }
 
-@media screen and (min-width: 768px){
-  .content{
-  width: 600px;
-  margin: 75px auto;
+.loginmodal-container{
+  max-width: 100%;
+    background-color: #69c4d0;
+      padding: 159px 30px;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
+}
+
+@media screen and (max-width: 768px){
+  .loginmodal-container{
+      height: 100%;
 }
 }
 
-.loginmodal-container{
-  padding: 45px 30px;
+
+
+
+
+@media screen and (min-width: 768px){
+
+
+  .content{
+  width: 600px;
+  margin: 125px auto;
+}
+
+.panel-header{
   max-width: 350px;
   width: 100% !important;
-  background-color: white;
+  margin: 0 auto;
+}
+
+h1{
+  color: #69c4d0 !important;
+}
+.loginmodal-container{
+  background-color: #fff;
+  max-width: 400px;
+  padding: 55px 30px;
+  width: 100% !important;
   margin: 0 auto;
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+}
+input[type=email], input[type="password"],.top-btn{
+  margin-bottom: 10px !important;
 }
 
+.btngroup{
+  margin-top: 12px !important;
+}
+
+}
+
+
+.panel-header{
+  position: relative;
+  background-color: #69c4d0;
+  height: 30%;
+}
+
+
 h1{
+  top:0;
+  line-height: 0.85;
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
-  color: #69c4d0;
-  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 55px;
+}
+
+input[type=email], input[type="password"],.btn{
+  height: 46px;
+  margin-bottom: 15px;
 }
 
 
 input[type=email], input[type="password"] {
-  height: 44px;
   font-size: 16px;
   width: 100%;
-  margin-bottom: 10px;
   -webkit-appearance: none;
   background: #fff;
   border: 1px solid #d9d9d9;
@@ -85,24 +132,38 @@ input[type=email]:focus, input[type="password"]:focus{
 
 
 .btn {
-  display: inline-block;
-  margin-bottom: 10px;
   position: relative;
-  width: 48% !important;
+  width: 100% !important;
 }
 
 .btngroup{
   width: 100%;
+  margin-top: 15px;
 }
 
 .loginmodal-submit{
   border: 0;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #69c4d0;
-  padding: 17px 0px;
-  font-family:  'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+  padding: 0;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   font-size: 18px;
+  font-weight: bold;
+  line-height: 44px;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.top-btn{
+  background-color: #69c4d0;
+  color: #fff;
+  border: solid 2px #fff !important;
+}
+
+.bottom-btn{
+  background-color: orange;
+  color: #fff;
+  margin-bottom: 0px;
 }
 
 .loginmodal-submit:focus{
@@ -114,13 +175,9 @@ input[type=email]:focus, input[type="password"]:focus{
   border: 0px;
   text-shadow: 0 1px rgba(0,0,0,0.3);
   color: #fff;
-  background-color: #357ae8;
 }
 
-a {
-  float: right;
-  clear: both;
-}
+
 
 ::placeholder{
   color: #ccc;
