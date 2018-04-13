@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>申し込み一覧</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/user.css">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/table.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="nav-side-menu">
+    <div class="brand">Brand Logo</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class=" menu-content collapse out">
+                <li class="active">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span>  申し込み一覧 <span class="glyphicon glyphicon-menu-right right" aria-hidden="true"></span>
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a href="#">
+                  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>  連絡済み申し込み <span class="glyphicon glyphicon-menu-right right" aria-hidden="true"></span></a>
+                </li>
+
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#">
+                  <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>  企業情報 <span class="glyphicon glyphicon-menu-right right" aria-hidden="true"></span></a>
+                </li>  
+            </ul>
+     </div>
+</div>
+<div class="right-content">
+    <div class="col-xs-12 col-sm-11 center">
+            <div class="row">
+                <div class="col-xs-12 panel-header">
+                    <h1 class="title">申し込み一覧</h1>
+                </div>
+
+                <div class="results col-xs-12">
+
+    <nav class="navbar form">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="bs-example-navbar-collapse-1">
+        <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        希望借入額から検索    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0 〜 1000,000</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1,000,000 〜 5,000,000</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5,000,000以上</a></li>
+    </ul>
+</div>
+
+      <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        年収から検索    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0 〜 1000,000</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1,000,000 〜 5,000,000</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5,000,000以上</a></li>
+    </ul>
+</div>
+<form class="navbar-form navbar-right">
+        <div class="input-group">
+    <input type="text" class="form-control" placeholder="検索">
+    <div class="input-group-btn">
+      <button class="btn  btn-green" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+
+      </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="table-responsive">
+        <table class="table table-hover row-clickable sheet">
+            <thead>
+                <tr>
+                    <th scope="col" style="padding-left: 12px;">名前</th>
+                    <th scope="col">希望借入額</th>
+                    <th scope="col">現在の借入額</th>
+                    <th scope="col">年収</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                <tr data-href="#">
+                    <td class="name">山田太郎</td>
+                    <td>100,000</td>
+                    <td>200,000</td>
+                    <td>4,000,000</td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</div>
+  </body>
+  </html>

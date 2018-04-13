@@ -1,0 +1,87 @@
+body, html {
+  height: 100%;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  line-height: 1.77;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 3.3rem;
+  color: #69c4d0;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+
+}
+
+p{
+  font-size:1.1rem;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+
+}
+
+
+.text-group{
+  margin-bottom: 28px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+}
+
+.content{
+  width: auto;
+  position: relative;
+  text-align: center;
+  margin: 140px 10px;
+}
+
+
+@media screen and (min-width: 768px){
+  .content{
+  width: 600px;
+  margin: 140px auto;
+}
+h1{
+    font-size: 4.2rem;
+}
+p{
+  font-size: 1.5rem;
+}
+}
+
+.loginmodal-submit{
+  border: 0;
+  color: #fff !important;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  padding: 17px 0px;
+  font-family:  'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+  font-size: 18px;
+}
+
+
+
+.btn {
+  transition: filter 0.2s ease;
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  width: 182px !important;
+  background: -webkit-linear-gradient(top, #bde9ef 6%, #69c4d0 56%);
+  border: 1px solid #69c4d0;
+
+
+}
+
+.btn:hover{
+  cursor:pointer;
+    filter: brightness(1.04);
+}
+
+.btn:active{
+  background-color: #69c4d0;
+  filter:brightness(0.8);
+}
+

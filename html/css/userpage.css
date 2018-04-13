@@ -1,0 +1,188 @@
+.center{
+  margin: 30px auto;
+  float: none;
+}
+
+.panel-header{
+  padding-left: 20px;
+}
+
+h1{
+  margin-bottom: 4rem;
+  }
+
+.glyphicon-user{
+  font-size: 34px;
+  margin-right: -8px;
+  top: 3px;
+}
+
+
+table{
+  border: 0;
+  width: 100%;
+  margin-bottom: 10px !important;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead{
+  display: none;
+}
+
+tr{
+  padding: 5px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: default !important;
+}
+
+td{
+  display: block;
+  text-align: right;
+  border-top: 0 !important;
+  border-bottom: 1px dotted #ccc;
+  line-height: 1 !important;
+  margin-top: 15px;
+  position: relative;
+  padding: 16px 10px 10px !important;
+}
+
+td:last-child{
+  border-bottom: 0;
+}
+
+.data-label{
+  float: left;
+  display: inline-block;
+
+}
+
+td:before{
+  content: attr(data-label);
+  float: left;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+    font-weight: bold;
+
+}
+
+td span{
+  font-size: 28px;
+  margin-right: 2px;
+}
+
+
+
+th{
+  background: none;
+  color: #4e4449;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+th td{
+  padding: 10px !important;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  body{
+    background-color: #fff;
+  }
+
+  .center{
+    margin: 0 auto;
+    top: 0;
+  }
+  .row{
+    margin: 0px;
+    box-shadow: none;
+  }
+  .panel-header{
+    border-radius: 0px !important;
+  }
+
+  .title{
+    margin-bottom: 80px !important;
+  }
+  h1{
+    text-align: center;
+  }
+td span{
+  font-size: 24px;
+  margin-right: 2px;
+}
+
+}
+
+
+.loginmodal-submit{
+  border: 0;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #69c4d0;
+  padding: 17px 0px;
+  font-size: 18px;
+  width: 182px;
+  font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.loginmodal-submit:focus{
+  outline: none !important;
+  color: #fff;
+}
+
+.loginmodal-submit:hover{
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  color: #fff;
+  background-color: #357ae8;
+}
+
+.grad-wrap{
+  text-align: center;
+  position: relative;
+}
+.grad-btn {
+  z-index: 2;
+     position: absolute;
+     bottom: 15px;
+     right: 0;
+     left: 0;
+     margin: auto;
+}
+.grad-item {
+  position: relative;
+  overflow: hidden;
+  height: 324px; /*隠した状態の高さ*/
+}
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 89px;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  content: "";
+}
+.grad-trigger {
+  display: none; /*チェックボックスは常に非表示*/
+}
+.grad-trigger:checked + .grad-btn {
+  display: none; /*チェックされていたら、grad-btnを非表示にする*/
+}
+.grad-trigger:checked ~ .grad-item {
+  height: auto; /*チェックされていたら、高さを戻す*/
+}
+.grad-trigger:checked ~ .grad-item::before {
+  display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+}

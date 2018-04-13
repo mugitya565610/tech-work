@@ -1,0 +1,120 @@
+body, {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  margin-top: 40px;
+}
+
+
+.forms{
+  margin-top: 28px;
+}
+
+hr{
+  border-width: 2px;
+  border-color: #4a4a4a;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input[type=text],input[type=email]{
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  border-radius: 2px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-color: #d9d9d9;
+}
+
+
+
+input[type=text]:hover,input[type=email]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+input[type=text]:focus,input[type=email]:focus{
+  outline: none ;
+  border: 2px solid #69c4d0 !important;
+}
+
+input[type=text]:active,input[type=email]:active{
+  outline: none !important;
+}
+
+.center-btn{
+  text-align: center;
+}
+
+.form-group{
+  position: relative;
+}
+
+
+.form-horizontal{
+  padding: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.btngroup{
+  width: 100%;
+}
+
+.loginmodal-submit{
+  border: 0;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #69c4d0;
+  padding: 17px 0px;
+  font-family:  'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+  font-size: 18px;
+  width: 182px;
+}
+
+.loginmodal-submit:focus{
+  outline: none !important;
+  color: #fff;
+}
+
+.loginmodal-submit:hover{
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  color: #fff;
+  background-color: #357ae8;
+}
+
+
+::placeholder{
+  color: #ccc !important;
+}
+
+
+
