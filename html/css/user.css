@@ -7,15 +7,21 @@ body{
 
 
 .nav-side-menu {
-  z-index: 1;
+  z-index: 3;
   overflow: auto;
   font-size: 15px;
   background-color: rgb(105, 196, 208);
   position: fixed;
   top: 0px;
   width: 225px;
-  height: 100%;
   color: #fff;
+}
+
+
+@media (min-width: 767px){
+  .nav-side-menu{
+    height: 100%;
+  }
 }
 .nav-side-menu .brand {
   line-height: 50px;
@@ -130,7 +136,9 @@ body{
 @media (max-width: 767px) {
   .nav-side-menu {
     position: relative;
+    position: fixed;
     width: 100%;
+
 
   }
   .nav-side-menu .toggle-btn {
@@ -213,9 +221,9 @@ table{
 }
 
 th{
-  color: #fff;
-  background-color: #69c4d0;
-  border-color: #64bcc7 !important;
+  background-color: #fff;
+  color: #69c4d0;
+  border-color: #69c4d0 !important;
   line-height: 2.2 !important;
     text-align: center !important;
     font-weight: bold;
