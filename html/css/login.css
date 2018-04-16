@@ -112,8 +112,10 @@ input[type=email]:focus, input[type="password"]:focus{
 }
 
 .btngroup{
+  position: relative;
   width: 100%;
   margin-top: 15px;
+    text-align: center;
 }
 
 .loginmodal-submit{
@@ -129,25 +131,24 @@ input[type=email]:focus, input[type="password"]:focus{
 }
 
 .top-btn{
-  background-color: #69c4d0;
+  background-color: #ee7b00;
   color: #fff;
   border: solid 2px #fff !important;
-  transition-property: all;
-    transition: 0.3s ease;
+
 }
 
-.bottom-btn{
-  background-color: orange;
+
+.signup{
+  margin-top: 10px;
+  font-size: 15px;
   color: #fff !important;
-  margin-bottom: 0px;
 }
 
-.bottom-btn:hover{
-  background-color: orange;
-  transition: filter 0.3s ease;
-  filter: brightness(1.08);
+.signup span{
+  top: 0;
 
 }
+
 
 .loginmodal-submit:focus{
   outline: none !important;
@@ -169,16 +170,8 @@ input[type=email]:focus, input[type="password"]:focus{
   .loginmodal-container{
       height: 100%;
 }
-  .top-btn:focus{
-  outline: none !important;
-  color: #fff;
-}
 
-.top-btn:hover{
-  background-color: #fff !important;
-  border: 0px;
-  color: #69c4d0 ;
-}
+
 }
 
 
@@ -214,23 +207,35 @@ h1{
   overflow: hidden;
 }
 input[type=email], input[type="password"],.top-btn{
-  margin-bottom: 10px !important;
+  margin-bottom: 13px !important;
 }
 
 .btngroup{
   margin-top: 12px !important;
 }
+
+.signup{
+  color: #ee7b00 !important;
+}
+
+.signup:hover{
+  color: #ee7b00;
+}
+
+
+
+}
+
 .top-btn{
-  background-color: #69c4d0;
+  background-color: #ee7b00;
   color: #fff !important;
-  border: solid 2px #69c4d0 !important;
+  border: solid 2px #ee7b00 !important;
+    transition-property: all;
+    transition: 0.3s ease;
 }
 
 .top-btn:hover{
-    background-color: #69c4d0;
+    background-color: #ee7b00;
   filter: brightness(1.08);
-
-}
-
 
 }
