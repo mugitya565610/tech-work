@@ -249,7 +249,9 @@ td{
 
 
 
-
+#clonetable{
+  z-index: 1 !important;
+}
 
 
 #clonetable th{
@@ -260,15 +262,22 @@ td{
 
 
 @media (max-width: 767px) {
+  .center{
+    margin-top: 80px !important;
+  }
   .table-right{
     width: 100%;
   }
   table{
-    font-size: 14px;
+    font-size: 13px;
   }
 
+#clonetable{
+  top: 50px !important;
+}
+
   #clonetable th{
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 
   .table-responsive{

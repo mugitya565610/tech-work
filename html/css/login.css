@@ -64,9 +64,8 @@ h1{
   top:0;
   line-height: 0.85;
   text-align: center;
-  font-size: 6rem;
+  font-size: 4.53rem;
   font-weight: bold;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
   color: #fff;
   margin-bottom: 55px;
 }
@@ -142,12 +141,13 @@ input[type=email]:focus, input[type="password"]:focus{
   margin-top: 10px;
   font-size: 15px;
   color: #fff !important;
+
 }
 
 .signup span{
-  top: 0;
-
+    line-height: 1px;
 }
+
 
 
 .loginmodal-submit:focus{
