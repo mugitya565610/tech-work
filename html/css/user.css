@@ -325,11 +325,19 @@ nav{
 
 
 .btn-green{
-  background-color: #69c4d0;
-  color: #fff;
+  transition: filter 0.2s ease;
+  background-color: #69c4d0 !important;
+  color: #fff !important;
   border-color: #69c4d0;
   font-size: 14px;
 }
+
+.btn-green:hover{
+  filter: brightness(1.05);
+
+}
+
+
 
 .btn-group{
   margin: 8px 0;

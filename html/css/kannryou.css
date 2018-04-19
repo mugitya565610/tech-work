@@ -1,64 +1,122 @@
-body, html {
-  height: 100%;
-  background-color: #fff;
-}
+
 
 h1, h2, h3, h4, h5, h6, p, body {
   line-height: 1.77;
   font-size: 18px;
-  color: #4a4a4a;
-  font-family: sans-serif;
+  color: #4e4449;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   margin: 0;
   padding: 0;
+
+}
+
+body{
+  background-image: url("../img/background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #69c4d0;
 }
 
 h1{
-  font-size: 3.3rem;
+  font-size: 2.9rem;
   color: #69c4d0;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+            -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
 
 }
 
 p{
   font-size:1.1rem;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
 
 }
 
 
 .text-group{
   margin-bottom: 28px;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
 }
 
 .content{
+  background-color: #fff !important;
   width: auto;
   position: relative;
   text-align: center;
-  margin: 140px 10px;
+  margin: 94px 10px;
+    border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+
+.inner{
+  padding: 90px 0;
+}
+
+.icon{
+  margin-bottom: 10px;
+}
+
+i{
+  top: 20px !important ;
+  font-size: 50px;
+  color: #fff;
+              -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: 100 !important;
+}
+
+.border{
+  background-color: #69c4d0;
+  display: inline-block;
+  border: solid 5px #69c4d0;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
 
 @media screen and (min-width: 768px){
   .content{
-  width: 600px;
-  margin: 140px auto;
+  width: 760px;
+  margin: 134px auto;
 }
 h1{
-    font-size: 4.2rem;
+    font-size: 3.7rem;
 }
 p{
   font-size: 1.5rem;
 }
 }
 
+@media screen and (max-width: 768px){
+
+  body{
+    background-color: #fff;
+    background-image: none;
+  }
+  .content{
+    box-shadow: none;
+  }
+
+}
+
+
+
+
 .loginmodal-submit{
   border: 0;
   color: #fff !important;
   text-shadow: 0 1px rgba(0,0,0,0.1);
   padding: 17px 0px;
-  font-family:  'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif ;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   font-size: 18px;
+  font-weight: bold;
+              -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -69,9 +127,8 @@ p{
   margin-bottom: 10px;
   position: relative;
   width: 182px !important;
-  background: -webkit-linear-gradient(top, #bde9ef 6%, #69c4d0 56%);
-  border: 1px solid #69c4d0;
-
+  background: linear-gradient(to bottom, #f48c1d 0%, #ee7b00 78%) !important;
+  border: 2px solid #ee7b00;
 
 }
 

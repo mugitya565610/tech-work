@@ -4,7 +4,7 @@ body, html {
 h1, h2, h3, h4, h5, h6, p, body {
   line-height: 1.77;
   font-size: 18px;
-  color: #4a4a4a;
+  color: #4e4449;
   font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif;
   margin: 0;
   padding: 0;
@@ -152,6 +152,9 @@ input[type=email]:focus, input[type="password"]:focus{
   font-size: 15px;
   color: #fff !important;
   display: block;
+  width: 48%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -216,11 +219,11 @@ input[type=email]:focus, input[type="password"]:focus{
 .loginmodal-container{
   background-color: #fff !important;
   background-image: none !important;
-  max-width: 405px;
-  padding: 60px 30px;
+  max-width: 415px;
+  padding: 85px 30px;
   width: 100% !important;
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
