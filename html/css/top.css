@@ -358,13 +358,15 @@ h4{
     padding: 100px 15px;
   }
   h3{
-    font-size: 3.5rem;
+    display: inline-block;
+    font-size: 3rem;
   }
 
   .flow{
     flex-direction: column;
     margin: 40px 0px;
-    width: 100%
+    width: 100%;
+    height: 500px;
   }
   .flow:before{
     content: none;
@@ -373,7 +375,7 @@ h4{
   .step-panel:after{
   box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
   top: 90%;
-  right: 50%;
+  right: 47.3%;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   border-top: 17px solid #69c4d0;
@@ -384,7 +386,7 @@ h4{
   }
   .step-panel{
     width: 100%;
-    height: 0;
+    height: 48px;
   }
 }
 
